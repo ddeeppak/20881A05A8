@@ -95,7 +95,7 @@ var tr=document.createElement('tr');
 
 for(var i in train)
 {
-    if(train[i][departureTime].Hours==0 && train[i][departureTime].Minutes<30 && train[i][departureTime].Seconds==0)   //Deparute less than 30 min
+    if(train[i][departureTime].Hours==0 && train[i][departureTime].Minutes>30 && train[i][departureTime].Seconds==0)   //Deparute less than 30 min
     {
         var tr=document.createElement('tr');
 
